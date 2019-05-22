@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>视频展示系统</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font: 13px Helvetica, Arial; }
+    form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+    form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+    form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+    #messages { list-style-type: none; margin: 0; padding: 0; }
+    #messages li { padding: 5px 10px; }
+    #messages li:nth-child(odd) { background: #eee; }
+</style>
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<!-- <script type="text/javascript" src="jsmpeg.min.js"></script> -->
+<script type="text/javascript" src="jsmpeg.pipe.js"></script>
+<!-- <script type="text/javascript" src="jsmpeg.js"></script> -->
+<script type="text/javascript" src="socket.io-stream_b.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<div id="container">
+<!-- 	<canvas id="video-canvas0" style="zoom: 0.7;"></canvas> -->
+<!-- 	<canvas id="video-canvas1" style="zoom: 0.7;"></canvas> -->
+<!-- 	<canvas id="video-canvas2" style="zoom: 0.7;"></canvas> -->
+</div>
+<ul id="messages"></ul>
+<form action="">
+    <input id="m" autocomplete="off" />
+    <button>Send</button>
+</form>
+    <button id="full"> 全屏</button>
+    <button id="exitFull">退出全屏</button>
+</body>
+</html>
